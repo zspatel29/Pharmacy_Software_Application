@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Signup_Activity">
+
+        <ImageView
+            android:id="@+id/Forgot_logo"
+            android:layout_width="401dp"
+            android:layout_height="271dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/application_logo"
+            android:src="@drawable/nav_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/Forgot_title_textView"
+            android:layout_width="154dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="4dp"
+            android:text="Register"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#005500"
+            android:textColorLink="#080C23"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Forgot_logo" />
+
+        <EditText
+            android:id="@+id/register_full_name"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Full_Name"
+            android:inputType="textPersonName"
+            android:textColor="#005500"
+            android:textColorHint="#005500"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Forgot_title_textView" />
+
+        <EditText
+            android:id="@+id/register_Email_Address"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Email_Address"
+            android:inputType="textEmailAddress"
+            android:textColor="#005500"
+            android:textColorHint="#005500"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_full_name" />
+
+        <EditText
+            android:id="@+id/register_phone_number"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Phone_Number"
+            android:inputType="phone"
+            android:textColor="#005500"
+            android:textColorHint="#005500"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_Email_Address" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#005500"
+            android:textColorHint="#005500"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_phone_number" />
+
+        <EditText
+            android:id="@+id/register_conform_password"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Conform_Password"
+            android:inputType="textPassword"
+            android:textColor="#005500"
+            android:textColorHint="#005500"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="355dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:text="register"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_conform_password" />
+
+        <TextView
+            android:id="@+id/register_login_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Already have an account? Login"
+            android:textColor="#005500"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_button"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_register"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="108dp"
+            android:layout_height="88dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
